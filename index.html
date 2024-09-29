@@ -3,129 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Blog Side</title>
-    <style>
-        .nav-bar{
-            background-color: rgb(57, 57, 66);
-            overflow: hidden;
-        }
-        .logo__side{
-           float: left;
-        }
-        .list__Side{
-            float: right;
-        }
-        .list__Side ul{
-           margin-right: 20px;
-           margin-top: 30px;
-        }
-        ul li{
-            display: inline;
-        }
-        ul li a{
-            font-size: 20px;
-            text-decoration: none;
-            color: #fff;
-            margin: 7px;
-        }
-        .name__section{
-            margin-bottom: 5px;
-        }
-        .textarea p{
-            margin: 0%;
-        }
-        .btn button{
-            background-color: blue;
-            padding: 10px 20px;
-            border-radius: 7px;
-        }
-        .btn button a{
-            color: #fff;
-            text-decoration: none;
-            font-weight: bolder;
-        }
-    </style>
+    <title>Bantu</title>
 </head>
 <body>
-    <header>
-        
-        <nav class="nav-bar">
-            <div class="logo__side">
-                <img src="logo.png" alt="" width="120px">
+    <!-- =====HEDAR SECTION START HERE===== -->
+    <div class="header-area">
+        <header class="header">
+            <div class="logo-area">
+                <img src="img/logo.png" alt="logo" width="136px" height="83px">
             </div>
-            <div class="list__Side">
+            <nav class="menu">
                 <ul>
                     <li><a href="#">Home</a></li>
+                    <li><a href="#">Pricing</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Blogs</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
+            </nav>
+            <div class="btn">
+                <button><a href="#">see demo</a></button>
             </div>
-        </nav>
-    </header>
-    <article>
-        <h2>How to Become <span style="color: blueviolet; cursor: pointer;">Web Developer</span></h2>
-        <p>By <a href="#" style="text-decoration: none;">Zulfikar Zulhash</a></p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nihil a veniam accusamus minus laborum voluptatum fuga! Voluptatem sequi, consequatur ducimus omnis voluptatibus quasi, rerum earum placeat dolorem, odio voluptatum error facere tempore ad voluptas? Cumque accusamus sit odit porro alias. Velit eaque reprehenderit error adipisci, inventore repudiandae nostrum quam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nihil a veniam accusamus minus laborum voluptatum fuga! Voluptatem sequi, consequatur ducimus omnis voluptatibus quasi, rerum earum placeat dolorem, odio voluptatum error facere tempore ad voluptas? Cumque accusamus sit odit porro alias. Velit eaque reprehenderit error adipisci, inventore repudiandae nostrum quam!</p>
-    </article>
-    <article></article>
-        <h2>How to Become <span style="color: blueviolet; cursor: pointer;">MERN Developer</span></h2>
-        <p>By <a href="#" style="text-decoration: none;">Zulfikar Zulhash</a></p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nihil a veniam accusamus minus laborum voluptatum fuga! Voluptatem sequi, consequatur ducimus omnis voluptatibus quasi, rerum earum placeat dolorem, odio voluptatum error facere tempore ad voluptas? Cumque accusamus sit odit porro alias. Velit eaque reprehenderit error adipisci, inventore repudiandae nostrum quam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nihil a veniam accusamus minus laborum voluptatum fuga! Voluptatem sequi, consequatur ducimus omnis voluptatibus quasi, rerum earum placeat dolorem, odio voluptatum error facere tempore ad voluptas? Cumque accusamus sit odit porro alias. Velit eaque reprehenderit error adipisci, inventore repudiandae nostrum quam!</p>
-    </article>
-    <h2>Table About Nothing</h2>
-    <table border="1" style="border-collapse: collapse;">
-        <thead>
-            <th>Name</th>
-            <th>ID</th>
-            <th>Department</th>
-            <th>Passing Year</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Zulfikar Zulhash</td>
-                <td>173071002</td>
-                <td>CSE</td>
-                <td rowspan="4">2024</td>
-            </tr>
-            <tr>
-                <td>Saidur Rahman Setu</td>
-                <td>173071003</td>
-                <td>EEE</td>
-            </tr>
-            <tr>
-                <td>Saidur Rahman Setu</td>
-                <td>173071004</td>
-                <td>LLB</td>
-            </tr>
-            <tr>
-                <td>Sumit Saha</td>
-                <td>173071004</td>
-                <td>BBA</td>
-            </tr>
-            <tr>
-                <td colspan="4" style="text-align: center;">&copy All somthing was wright!</td>
-            </tr>
-        </tbody>
-        
-    </table>
-    <h2>Contact Form</h2>
-    <form action="">
-        <div class="name__section">
-            <label for="name">Name</label>
-            <input type="text" id="name"> 
+        </header>
+    </div>
+    <!-- =====HEDAR SECTION END HERE===== -->
+    <!-- =====HERO SECTION START HERE===== -->
+    <div class="hero-area">
+        <div class="hero">
+            <div class="hero-text">
+                <h1 class="text-title"><span class="highlight">Saling</span> bantu 
+                    sesama <span class="highlight">Warga</span></h1>
+                <p class="text-para">Aplikasi Bantu warga merupakan aplikasi berbasis mobile dengan konsep kesehatan yang berkaitan dengan keadaan covid sekarang</p>
+                <form action="">
+                    <input type="email" placeholder="Email address . . . ." id="email">
+                </form>
+            </div>
+            <div class="hero-banner">
+                <img src="img/banner1.png" alt="img" width="261.04px">
+                <img src="img/banner2.png" alt="img" width="332.14px">
+            </div>
         </div>
-        <div class="email_section">
-            <label for="mail">E-mail</label>
-            <input type="email" id="mail">
+    </div>
+    <!-- =====HERO SECTION END HERE===== -->
+    <!-- =====SERVICES SECTION START HERE===== -->
+     <div class="services-area">
+        <div class="services">
+            <div class="single-services">
+                <img src="img/icon.png" alt="icon">
+                <h4 class="single-services-title">Donor darah</h4>
+                <p class="single-services-para">Cek ketersediaan donor darah atau mau donor darah</p>
+            </div>
+            <div class="single-services">
+                <img src="img/icon.png" alt="icon">
+                <h4 class="single-services-title">Donor darah</h4>
+                <p class="single-services-para">Cek ketersediaan donor darah atau mau donor darah</p>
+            </div>
+            <div class="single-services">
+                <img src="img/icon.png" alt="icon">
+                <h4 class="single-services-title">Donor darah</h4>
+                <p class="single-services-para">Cek ketersediaan donor darah atau mau donor darah</p>
+            </div>
+            <div class="single-services">
+                <img src="img/icon.png" alt="icon">
+                <h4 class="single-services-title">Donor darah</h4>
+                <p class="single-services-para">Cek ketersediaan donor darah atau mau donor darah</p>
+            </div>
+            <div class="single-services">
+                <img src="img/icon.png" alt="icon">
+                <h4 class="single-services-title">Donor darah</h4>
+                <p class="single-services-para">Cek ketersediaan donor darah atau mau donor darah</p>
+            </div>
+            <div class="single-services">
+                <img src="img/icon.png" alt="icon">
+                <h4 class="single-services-title">Donor darah</h4>
+                <p class="single-services-para">Cek ketersediaan donor darah atau mau donor darah</p>
+            </div>
         </div>
-        <div class="textarea">
-            <p>Text</p>
-            <textarea name="" id=""></textarea>
-        </div> 
-        <div class="btn">
-            <button><a href="#">Submit</a></button>
+        <button><a href="#">load more</a></button>
+     </div>
+    <!-- =====SERVICES SECTION END HERE===== -->
+    <!-- =====APP SECTION START HERE===== -->
+     <div class="app-area">
+        <div class="app">
+            <div class="app-banner">
+                <img src="img/appbanner.png" alt="app-banner" width="
+                614px">
+            </div>
+            <div class="app-link">
+                <p class="download">Download Now</p>
+                <h2 class="app-title">Get <span class="highlight">the app</span></h2>
+                <p class="app-para">Aplikasi kami tersedia di play store , app store , anda dapat langsung mendownloadnya secara gratis dan nikmati fitur aplikasi yang sudah kami sediakan</p>
+                <img src="img/googleplay.png" alt="google" width="204.24px">
+                <img src="img/app.png" alt="app" width="208.94px">
+            </div>
         </div>
-    </form>
+     </div>
+    <!-- =====APP SECTION END HERE===== -->
+    <!-- =====CONTACT SECTION START HERE===== -->
+     <div class="contact-area">
+        <div class="contact">
+            <div class="form">
+                <form action="">
+                    <h4 class="form-title">
+                        <input type="text" name="name: " id="name" placeholder="your name">
+                        <input type="email" name="email: " id="email" placeholder="Email Address">
+                        <textarea name="text: " id="text" placeholder="Your Message"></textarea>
+                    </h4>
+                </form>
+                <button><a href="#">send</a></button>
+            </div>
+            <div class="contact-text">
+                <p class="info-text">Infomation technologies building,
+                    Kudus , Jawa tengah Indonesian</p>
+                <p class="number">+021213414115151</p>
+                <p class="mail">hello1234@info.com</p>
+            </div>
+        </div>
+     </div>
+    <!-- =====FOOTER SECTION START HERE===== -->
+     <div class="footer-area">
+        <div class="footer">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="logo" width="136px" height="83px">
+                <p class="footer-logo-para">
+                    Kami adalah  aplikasi pelayanan masyarakat dalam kasus kesehatan terutama covid 19</p>
+                <div class="social-icon"></div>
+            </div>
+            <div class="footer-logo-text">
+                <div class="single-footer-text">
+                    <h4 class="single-footer-title">Tentang Kami</h4>
+                    <p class="single-footer-para">Tentang Kami</p>
+                    <p class="single-footer-para">Tentang Kami</p>
+                </div>
+                <div class="single-footer-text">
+                    <h4 class="single-footer-title">Tentang Kami</h4>
+                    <p class="single-footer-para">Tentang Kami</p>
+                    <p class="single-footer-para">Tentang Kami</p>
+                </div>
+                <div class="single-footer-text">
+                    <h4 class="single-footer-title">Tentang Kami</h4>
+                    <p class="single-footer-para">Tentang Kami</p>
+                    <p class="single-footer-para">Tentang Kami</p>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- =====FOOTER SECTION END HERE===== -->
+
 </body>
 </html>
