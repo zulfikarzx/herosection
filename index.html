@@ -3,256 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>বাংলা বুক</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Hind+Siliguri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Best Learning</title>
     <style>
-        /* body{
-            background-color: blanchedalmond;
-        } */
-        .header{
-            background-color: rgb(240, 239, 239);
-            overflow: hidden;
-            clear: both
+        .container{
+            width: 85%;
+            margin: 0 auto;
+            justify-content: space-between;
         }
-        .head{
-            clear: both;
-            overflow: hidden;
+        nav{
+            display: flex;
         }
-        .head .logo{
-            width: 50vh;
-            height: 4vh;
-            margin-top: 20px;
-            margin-left: 10px;
+        .menu-area{
+            margin-top: 1rem;
         }
-        .menu{
-            width: 50vh;
-            float: right;
-            text-align: right;
-            margin-right: 60px;
-            margin-top: 0;
-            top: 50px;
-
+        .menu-area ul{
+            list-style-type: none;
         }
-        .menu ul{
-            margin-top: 0;
+        .nav-list{
+            display: flex;
+            gap: 20px;
         }
-        .menu ul li{
-            list-style: none;
-            display: inline-block;
-            margin-right: 10px;
-            margin-bottom: 15px;
+        .nav-list li a{
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: #000;
         }
-        .menu ul li a{
+        .button-area{
+            margin-top: 1.5rem;
+        }
+        .button-area button{
+            padding: 7px 15px;
+            font-size: 1rem;
+            border: none;
+            
+        }
+        .button-area button a{
             text-decoration: none;
             color: #000;
-            font-weight: 700;
-            font-family: "Galada", cursive;
-            font-weight: 400;
+
+        }
+        .button-area button:nth-of-type(2){
+            background-color: #4287f5;
+            margin-left: 10px;
+        }
+        #color-w{
+            color: #fff;
         }
         .hero-area{
-            overflow: hidden;
+            display: flex;
+            justify-content:space-between;
         }
         .hero-txt{
-            width: 50vh;
-            float: left;
-            margin-right: 320px;
+            margin-top: 200px;
             padding: 50px;
+
+        }
+        span{
+            letter-spacing: 0.6rem;
+        }
+        h1{
+            font-size:3.5rem;
+            color: #333;
+        }
+        .hero-txt p{
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+        .hero-txt > *{
+            margin-bottom: 34px;
+        }
+        .hero-btn button{
+            padding: 10px 20px; 
+            border: none;
+            background-color: #4287f5;
+        }
+        .hero-btn button a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+        }
+        .bg-img{
+            position: relative;
+        }
+        .first{
+            position: relative;
+            top: 0;
+            left: 551px;
+        }
+        .second{
+            position: relative;
+            top: 0;
+            left: 500px;
+        }
+        .third{
+            position: relative;
+            top: 0;
+            left: 463px;
         }
         .hero-banner{
-            width: 50vh;
-            float: left;
+            padding: 70px;
+            margin-left: 50px;
         }
-        .services-area{
-            text-align: center;
-            overflow: hidden;
-            margin-top: 70px;
+        .hero-top-area{
+            position: absolute;
+            display: flex;
         }
-        .services{
-            overflow: hidden;
-            margin-left: 20px;
-            margin-top: 100px;
+        .top-img{
+            position: relative;
+            top: 102px;
+            left: 580px;
         }
-        .single-services{
-            width: 560px;
-            float: left;
-            overflow: hidden;
-            margin-right: 20px;
-            margin-bottom: 30px;
-            margin-left: 30px;
+        .topleft-img{
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 70.54px;
         }
-        .blog-area{
-            text-align: center;
-            overflow: hidden;
-            margin-bottom: 100px;
+        .bottomleft-img{
+            position: relative;
+            bottom: -622px;
+            left: -71px;
+            margin: 0;
         }
-        .single-blog{
-            width: 500px;
-            height: 400px;
-            float: left;
-            margin-right: 10px;
-            margin-left: 80px;
-            padding: 10px;
-            text-align: center;
-            overflow: scroll;
-            margin-top: 25px;
+        .topright-img{
+            position: relative;
+            top: 180px;
+            right: -1680px;
         }
-        footer{
-            padding: 30px;
-            background-color: bisque;
-            overflow: hidden;
+        .bottomright-img{
+            position: relative;
+            bottom: -593px;
+            right: -1600px;
         }
-        .single-footer:nth-child(3){
-            margin-top: 70px;
-            width: 300px;
-            margin-left: 150px;
-        }
-        .single-footer{
-            width: 600px;
-            float: left;
-            margin-left: 40px;
-        }
-        .single-footer input{
-            padding: 7px 15px;
-            border-radius: 7px;
-        }
-        .single-footer button{
-            padding: 7px 15px;
-            border: 1px solid #cb23f5;
-            border-radius: 4px;
-        }
-        ul li a{
-            padding: 7px 15px;
-            border-radius: 4px;
-        }
-        ul li a:hover{
+        .fa-solid{
             color: #fff;
-        }
-        .single-footer button,a:hover{
-            border: #fff;
-            background: #cb23f5;
-            color: #fff;
-            transition: 1.1s;
-        }
-        .single-footer a{
-            text-decoration: none;
-            font-weight: bolder;
-        }
-        p{
-            font-family: "Hind Siliguri", sans-serif;
-        }
-        .para{
-            font-family: "Hind Siliguri", sans-serif;
-            font-weight: 400;
-            font-size: 17px;
+            position: relative;
+            left: 6px;
         }
     </style>
 </head>
 <body>
-    <!-- =====HEADER SECTION STAR HERE===== -->
-    <div class="header">
-        <div class="head">
-            <div class="logo">
-                <img src="img/logo.png" alt="logo" width="100px">
+    <!-- =====Nav area start here -->
+    <nav class="container">
+        <div class="logo-area">
+            <img src="img/Logo.png" alt="logo" width="180px">
+        </div>
+        <div class="menu-area">
+            <ul class="nav-list">
+                <li class="list-item"><a href="#" class="list-link">Home</a></li>
+                <li class="list-item"><a href="#" class="list-link">About Us</a></li>
+                <li class="list-item"><a href="#" class="list-link">Courses</a></li>
+                <li class="list-item"><a href="#" class="list-link">Apparentiships</a></li>
+                <li class="list-item"><a href="#" class="list-link">More</a></li>
+            </ul>
+        </div>
+        <div class="button-area">
+            <button><a href="#">Sign in</a></button>
+            <button><a href="#" id="color-w">Login</a></button>
+        </div>
+    </nav>
+    <!-- =====Nav area end here -->
+    <!-- =====Hero area start here -->
+     <div class="hero-top-area">
+        <div class="topleft-img">
+            <img src="img/leftGroup1.png" alt="">
+        </div>
+        <div class="bottomleft-img">
+            <img src="img/leftGroup2.png" alt="">
+        </div>
+        <div class="topright-img">
+            <img src="img/rightGroup1.png" alt="">
+        </div>
+        <div class="bottomright-img">
+            <img src="img/rightGroup2.png" alt="">
+        </div>
+        <div class="container">
+            <div class="top-img">
+                <img src="img/topGroup.png" alt="">
             </div>
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">হোম</a></li>
-                    <li><a href="#">সার্বিস</a></li>
-                    <li><a href="#">ব্লক</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <!-- =====HEADER SECTION END HERE===== -->
-    <!-- =====HERO SECTION STAR HERE===== -->
-     <div class="hero-area">
-        <div class="hero-txt">
-            <h2 class="title">ওয়েব ডেভেলপমেন্ট কি</h2>
-            <p class="para">একটি ওয়েবসাইটকে তৈরী করা থেকে শুরু করে ইন্টারনেটে লাইভ করা পর্যন্ত যে সকল কাজ করতে হয় সেই সকল কাজকে একসঙ্গে ওয়েব ডেভেলপমেন্ট বলা হয়। ওয়েব সার্ভারে জমা রাখা তথ্য ইন্টারনেটের মাধ্যমে দর্শনযোগ্য করার সফটওয়্যার তৈরী করাকে ওয়েব ডেভেলপমেন্ট বলা হয়।</p>
-        </div>
-        <div class="hero-banner">
-            <img src="img/banner1.png" alt="" width="1000px">
-        </div>
+            <div class="hero-area">
+                <div class="hero-txt">
+                    <span>TRAINING TO SUCCEED</span>
+                    <h1 class="txt-heading">Believe and you <br> can achieve </h1>
+                    <p class="hero-para">Learn any skill from comfort of your home <br>
+                        Anywhere and Anytime for only $10</p>
+                    <div class="hero-btn">
+                        <button><a href="#">Apply Now </a><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    <div class="bg-img">
+                        <div class="first">
+                            <img src="img/bar1.png" alt="" width="65.83px">
+                        </div>
+                        <div class="second">
+                            <img src="img/bar2.png" alt="" width="45px.5px">
+                            <img src="img/bar3.png" alt="" width="68.3px">
+                        </div>
+                        <div class="third"> 
+                            <img src="img/bar4.png" alt="" width="75px.5px">
+                            <img src="img/bar5.png" alt="" width="75px.5px">
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-banner">
+                    <img src="img/hero-banner.png" alt="hero-banner">
+                </div>
+            </div>
+         </div>
      </div>
-    <!-- =====HERO SECTION END HERE===== -->
-    <!-- =====SERVICES SECTION START HERE===== -->
-     <div class="services-area">
-        <h1 class="services-title">বাংলা টিউটোরিয়াল</h1>
-        <h4 class="sub-title">ওয়েব ডেভেলপমেন্ট</h4>
-        <div class="services">
-            <div class="single-services">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/FwmuhNTrJO4?si=D2_GX59U14fKyfvc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div class="single-services">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/X7XbjwD6fVY?si=TVuThujYTKRONXsY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div class="single-services">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/w307avqohW8?si=B9hfkt-hqlufmIGm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div class="single-services">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ePlWFLsFAwo?si=isH3PJK29U-kUkMK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div class="single-services">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ag3zMEJtHAA?si=EB_Pug_NSKc44C29" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div class="single-services">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/7yqNQyKOkjY?si=xnLN3D0BvAL1uii2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </div>
-     </div>
-    <!-- =====SERVICES SECTION END HERE===== -->
-    <!-- =====BLOG SECTION START HERE===== -->
-     <div class="blog-area">
-        <h2 class="blog-title">ওয়েব ডেভেলপমেন্ট ব্লক</h2>
-        <h4 class="sub-title">কিছু থিউরিটিকেল</h4>
-        <div class="blog">
-            <div class="single-blog">
-                <h2 class="sigle-blog-title">এইচটিএমএল</h2>
-                <p class="single-blog-para">এইচটিএমএল এর মার্ক আপ ট্যাগ সমূহ ব্যবহার করে ওয়েবপেজ এর বেসিক কাঠামো তৈরি করা হয়।
-                    প্রকৃত অর্থে এটি কোনো প্রোগ্রামিং ল্যাংগুয়েজ নয় বরং একটি মার্কআপ ল্যাংগুয়েজ যা একসারি মার্কআপ ট্যাগ এর সমন্বয় গঠিত। ইন্টারনেটে তথা ওয়েবসাইটে ওয়েবপেজ তৈরিতে এইচ টি এম এল সবচেয়ে বেশি ব্যবহৃত হয়। এই ফাইলের এক্সটেনশন .html অথবা .htm উভয়ই হতে পারে। এতে বিভিন্ন এইচটিএমএল ট্যাগ ব্যবহার করে বিভিন্ন ফর্ম্যাটিং, অবজেক্ট ও লিংক প্রকাশ করা করা হয়। HTML এর সর্বশেষ ভার্সন হলো HTML5 যার উন্নয়ন কাজ এখন সম্পূর্ণ এবং নতুন আদর্শমান । HTML5 এ ওয়েবসাইটে অডিও,ভিডিও যোগ করার জন্য নতুন আদর্শ(স্ট্যান্ডার্ড) যোগ করা হয়েছে।
-                    ওয়েবপেজ মূলত দুই ধরনের হয়। স্টাটিক ওয়েবপেজ এবং ডায়নামিক ওয়েবপেজ। HTML ও CSS স্টাটিক ওয়েবপেজ বানানো হয়।ডায়নামিক ওয়েবপেজ বানাতে এগুলোর সাথে পিএইচপি, জাভাস্ক্রিপ্ট ইত্যাদি প্রোগ্রামিং ল্যাঙ্গুয়েজও ব্যবহার করা হয়।</p>
-                <span style="font-weight: bolder;">ইতিহাস</span>
-                <p class="single-blog-para">১৯৮০ সালে ব্রিটিশ কম্পিউটার বিজ্ঞানী টিম বার্নার্স-লি, যিনি সার্ন এ একজন ঠিকাদার ​​ছিলেন, সর্বপ্রথম সার্ন গবেষকদের মাঝে দস্তাবেজ শেয়ার করার জন্য ENQUIRE prototyped নামে একটি ‍System এর প্রস্তাব দেন। ১৯৮৯ সালে, বার্নার্স-লি একটি ইন্টারনেট ভিত্তিক হাইপারটেক্সট সিস্টেম প্রস্তাবে একটি মেমো লিখেন। ১৯৯০ সালে বার্নার্স-লি ব্রাউজার এবং সার্ভারের সফ্টওয়্যারে এইচটিএমএল (HTML) এর উল্লেখ করেন ।এ বছরেই, বার্নার্স-লি এবং সার্ন এর তথ্য সিস্টেম ইঞ্জিনিয়ার Robert Cailliau যৌথভাবে সার্নকে এ প্রকল্পের জন্য অর্থায়নে অনুরোধ করেন, কিন্তু প্রকল্পটি আনুষ্ঠানিকভাবে সার্ন দ্বারা গৃহীত হয়নি।</p>
-            </div>
-            <div class="single-blog">
-                <h2 class="single-blog-title">সিএসএস</h2>
-                <p class="single-blog-para">ক্যাসকেডিং স্টাইল শীট ( সিএসএস ) হল একটি স্টাইল শীট ভাষা যা এইচটিএমএল বা এক্সএমএল ( এসভিজি , ম্যাথএমএল বা এক্সএইচটিএমএল এর মতো এক্সএমএল উপভাষা সহ ) মার্কআপ ভাষায় লেখা একটি নথির উপস্থাপনা এবং স্টাইল নির্দিষ্ট করার জন্য ব্যবহৃত হয় । [ 1 ] CSS হল HTML এবং JavaScript এর পাশাপাশি ওয়ার্ল্ড ওয়াইড ওয়েবের একটি ভিত্তিপ্রস্তর প্রযুক্তি ।
-                    লেআউট , রঙ এবং ফন্ট সহ বিষয়বস্তু এবং উপস্থাপনা পৃথকীকরণ সক্ষম করার জন্য CSS ডিজাইন করা হয়েছে । [ 3 ] এই বিচ্ছেদ বিষয়বস্তু অ্যাক্সেসযোগ্যতা উন্নত করতে পারে , যেহেতু বিষয়বস্তু তার উপস্থাপনার জন্য উদ্বেগ ছাড়াই লেখা যেতে পারে; উপস্থাপনা বৈশিষ্ট্যের স্পেসিফিকেশনে আরো নমনীয়তা এবং নিয়ন্ত্রণ প্রদান; একটি পৃথক .css ফাইলে প্রাসঙ্গিক CSS উল্লেখ করে ফরম্যাটিং ভাগ করতে একাধিক ওয়েব পৃষ্ঠা সক্ষম করুন , যা কাঠামোগত বিষয়বস্তুতে জটিলতা এবং পুনরাবৃত্তি কমায়; এবং .css ফাইলটিকে ক্যাশে করতে সক্ষম করুন যাতে ফাইলটি শেয়ার করা এবং এর বিন্যাসকরণের পৃষ্ঠাগুলির মধ্যে পৃষ্ঠা লোডের গতি উন্নত করা যায়৷
-                    বিন্যাস এবং বিষয়বস্তুর পৃথকীকরণ এছাড়াও বিভিন্ন রেন্ডারিং পদ্ধতির জন্য একই মার্কআপ পৃষ্ঠাকে বিভিন্ন শৈলীতে উপস্থাপন করা সম্ভবপর করে তোলে, যেমন অন-স্ক্রীনে, প্রিন্টে, ভয়েস দ্বারা (স্পীচ-ভিত্তিক ব্রাউজার বা স্ক্রিন রিডারের মাধ্যমে ), এবং ব্রেইল-ভিত্তিক। স্পর্শকাতর ডিভাইস। CSS-এর বিকল্প বিন্যাসের জন্যও নিয়ম রয়েছে যদি কোনো মোবাইল ডিভাইসে বিষয়বস্তু অ্যাক্সেস করা হয় । [ 4 ]
-                    একটি সম্পত্তির একাধিক ঘোষণা একটি নির্দিষ্ট উপাদানের সাথে মিলে গেলে কোন ঘোষণা প্রযোজ্য তা নির্ধারণ করতে নির্দিষ্ট অগ্রাধিকার স্কিম থেকে নাম ক্যাসকেডিং আসে। এই ক্যাসকেডিং অগ্রাধিকার পরিকল্পনা অনুমানযোগ্য।
-                    CSS স্পেসিফিকেশন ওয়ার্ল্ড ওয়াইড ওয়েব কনসোর্টিয়াম (W3C) দ্বারা রক্ষণাবেক্ষণ করা হয়। ইন্টারনেট মিডিয়া টাইপ ( MIME টাইপ ) text/cssRFC 2318 (মার্চ 1998) দ্বারা CSS-এর সাথে ব্যবহারের জন্য নিবন্ধিত হয়েছে। W3C CSS নথিগুলির জন্য একটি বিনামূল্যের CSS যাচাইকরণ পরিষেবা পরিচালনা করে। [ ৫ ]
-                    HTML ছাড়াও, অন্যান্য মার্কআপ ভাষাগুলি XHTML , প্লেইন XML , SVG , এবং XUL সহ CSS-এর ব্যবহার সমর্থন করে ৷ CSS GTK উইজেট টুলকিটেও ব্যবহৃত হয় ।</p>
-            </div>
-            <div class="single-blog">
-                <h2 class="single-blog-title">জাভাস্ক্রিপ্ট</h2>
-                <p class="single-blog-para">জাভাস্ক্রিপ্ট ইংরেজি: JavaScript; উচ্চারণ:  ইন্টারনেটে ব্যবহৃত অন্যতম সবচেয়ে জনপ্রিয় স্ক্রিপ্টিং ল্যাংগুয়েজ। জাভাস্ক্রিপ্ট হল একটি ক্লায়েন্ট সাইড স্ক্রিপ্টিং বা ব্রাউজার স্ক্রিপ্টিং ল্যাংগুয়েজ। জাভাস্ক্রিপ্ট (সংক্ষেপে JS বলা হয়) একটি প্রোটোটাইপ-ভিত্তিক স্ক্রিপ্টিং ল্যাংগুয়েজ যাতে পরিবর্তনশীল, দুর্বল টাইপ এবং প্রথম শ্রেণীর ফাংশন আছে। এটি একটি অবজেক্ট ওরিয়েন্টেড, কার্যকরী প্রোগ্রামিং শৈলী সমর্থনকারী ভাষা। জাভাস্ক্রিপ্ট একটি ওবজেক্ট-ওরিয়েন্টেড, ডায়নামিক প্রোগ্রামিং ভাষা। এতে আছে ডেটা টাইপ, অপারেটর, গুরুত্বপূর্ণ কিছু অবজেক্ট (যেগুলো সব সময় আপনি ব্যবহার করতে পারবেন) আর ফাংশন বা মেথড। জাভা আর সি প্রোগ্রামিং ভাষা থেকে বেশ কিছু সিনট্যাক্স ধার করে নেওয়ায় যারা এসব ভাষায় পারদর্শী তাদের জন্য এটি শেখা তুলনামূলকভাবে সহজ। ১৯৯৫ সালে নেটস্কেপের প্রকৌশলী ব্রেন্ডন আইচ জাভাস্ক্রিপ্ট তৈরি করেন, যেটা মুক্তি পায় ১৯৯৬ সালের শুরুর দিকে নেটস্কেপ ২ (ব্রাউজার) এর সাথে। এর নাম দেয়া হয়েছিল LiveScript, কিন্তু মার্কেটিং কৌশলের গ্যাড়াকলে পড়ে দুর্ভাগ্যজনত এর নাম জাভাস্ক্রিপ্ট হয়ে যায়, সান মাইক্রোসিস্টেম এর জাভা ল্যাংগুয়েজের জনপ্রিয়তাকে পুঁজি করার জন্য। জাভা আর জাভাস্ক্রিপ্টের মাঝে তেমন কোন মিল না থাকা সত্ত্বেও সেই থেকে তাই জাভাস্ক্রিপ্ট নামটা নিয়ে বিভ্রান্তি থেকে গেছে। মাইক্রোসফট এই প্রোগ্রামিং ভাষার সাথে প্রায় মিলে যায় এরকম একটি ল্যাংগুয়েজ JScript নাম দিয়ে প্রায় ৩ মাস পর ইন্টারনেট এক্সপ্লোরারের সাথে বাজারে নিয়ে আসে। এদিকে নেটস্কেপ Ecma International (স্ট্যান্ডার্ড নির্ধারণ করে এরকম একটি ইউরোপীয়ান সংস্থা) এর কাছে ল্যাংগুয়েজটি উপস্থাপন করে - যার ফলাফল ১৯৯৭ সালে ECMAScript এর প্রথম সংস্করণ হিসেবে বাজারে আসে। ১৯৯৯ সালে এই স্ট্যান্ডার্ডটি আরও উন্নত হয় ECMAScript সংস্করণ ৩ হিসেবে - আর সেই থেকে ভাষাটির তেমন কোন বড় পরিবর্তন হয়নি। চতুর্থ সংস্করণটি ভেস্তে যায়, ভাষাটির জটিলতা নিয়ে মতবিরোধের ফলাফল হিসেবে। তবে এই চতুর্থ সংস্করণের অনেক অংশবিশেষ কে ভিত্তি হিসেবে ধরে ২০০৯ সালে নতুন ECMAScript এর পঞ্চম সংস্করণ প্রকাশ করা হয়। when it was deployed in the Netscape Navigator 2.0 beta 3 in December.</p>
-            </div>
-        </div>
-     </div>
-    <!-- =====BLOG SECTION END HERE===== -->
-    <!-- =====FOOTER SECTION START HERE===== -->
-     <footer>
-        <div class="single-footer">
-            <h3 class="footer-title">বাংলা বুক</h3>
-            <p class="footer-para">
-                বাংলা বুক এখন পাওয়া যাচ্ছে বই মেলাতে।
-            </p>
-        </div>
-        <div class="single-footer">
-            <h3 class="footer-title">বাংলা বুক সংস্থা</h3>
-            <p class="footer-para">প্রথম আলো</p>
-            <p class="footer-para">কালের কণ্ঠ</p>
-            <p class="footer-para">সমকাল</p>
-        </div>
-        <div class="single-footer">
-            <input type="email" id="email" placeholder="E-mail">
-            <button><a href="#">পাঠান</a></button>
-        </div>
-     </footer>
-    <!-- =====FOOTER SECTION END HERE===== -->
-
+     <!-- =====Hero area end here -->
 </body>
 </html>
